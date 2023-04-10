@@ -16,7 +16,7 @@ public:
 		cout << "Сколько даёт плодов?" << endl; cin >> cnt;
 	}
 	Plants(string name, string season, int cnt) : name(name), season(season), cnt(cnt) {}
-	~Plants()
+	virtual ~Plants()
 	{
 		cout << "Деструктор для растения вызван" << endl;
 	};
